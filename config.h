@@ -63,11 +63,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ vol_perc, "[ %s%%]",	"/dev/snd/pcmC0D3p" },
+	//{ vol_perc, "[ %s%%]",	"/dev/snd/pcmC0D3p" },
 	{ battery_perc, "[ %s%%]",	"BAT0" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp3s0" },
-    	{ netspeed_rx, "[%sB/s ]", "wls1" },
+    	//{ netspeed_rx, "[%sB/s ]", "wls1" },
 	//{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
 	//{ ram_perc, "[RAM  %s%%]   ", NULL	      },
-	//{ datetime, "%s",           "%a %b %d %r" },
+	{ datetime, "[ %s]",           "%H:%M" },
 };
