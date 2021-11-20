@@ -63,11 +63,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	//{ vol_perc, "[ %s%%]",	"/dev/snd/pcmC0D3p" },
-	{ battery_perc, "[ %s%%]",	"BAT0" },
-	//{ wifi_perc, "W: (%3s%% on ", "wlp3s0" },
-    	//{ netspeed_rx, "[%sB/s ]", "wls1" },
-	//{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
-	//{ ram_perc, "[RAM  %s%%]   ", NULL	      },
-	{ datetime, "[ %s]",           "%H:%M" },
+	/* { vol_perc, "[ %s%%]",	"/dev/snd/pcmC0D3p" }, */
+	/* { battery_perc, " [ %s%%]",	"BAT0" }, */
+	/* { wifi_essid, "[ %2s]", "wlp3s0" }, */
+	/* { netspeed_rx, "[%sB/s ]", "wls1" }, */
+	/* { cpu_perc, "[CPU  %s%%]", NULL	}, */
+	/* { ram_perc, "[RAM  %s%%]", NULL	}, */
+	/* { datetime, "[ %s]", "%H:%M" }, */
+	{ run_command, " %2s ", "neticon.sh" },
+	{ run_command, " %2s ", "vol.sh" },
+	{ run_command, " %2s ", "battery.sh" },
 };
