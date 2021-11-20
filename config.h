@@ -70,7 +70,8 @@ static const struct arg args[] = {
 	/* { cpu_perc, "[CPU  %s%%]", NULL	}, */
 	/* { ram_perc, "[RAM  %s%%]", NULL	}, */
 	/* { datetime, "[ %s]", "%H:%M" }, */
-	{ run_command, " %2s ", "neticon.sh" },
-	{ run_command, " %2s ", "vol.sh" },
-	{ run_command, " %2s ", "battery.sh" },
+	{ run_command, " %2s ", "neticon" },
+	{ run_command, " %2s ", "weatherbar" },
+	{ run_command, " %2s ", "volume" },
+	{ run_command, " %2s ", "battery" },
 };
