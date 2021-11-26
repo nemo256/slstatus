@@ -74,4 +74,5 @@ static const struct arg args[] = {
 	{ run_command, " %2s ", "weatherbar" },
 	{ run_command, " %2s ", "volume" },
 	{ run_command, " %2s ", "battery" },
+	/* { run_command, " %2s", "clock" }, */
 };
